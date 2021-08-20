@@ -7,7 +7,7 @@ import retrofit2.http.Query
 
 interface ApiInterface {
 
-    @GET("https://pixabay.com/api/")
+    @GET("api/")
     fun getDashboardData(
         @Query("key") key: String,
         @Query("q") q: String,

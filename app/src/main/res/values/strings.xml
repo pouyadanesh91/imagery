@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Imagery</string>
+    <string name="main_image_item_condes">main image</string>
 </resources>
