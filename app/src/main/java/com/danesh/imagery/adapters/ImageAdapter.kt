@@ -28,7 +28,6 @@ class ImageAdapter(val images: ArrayList<ImageHitModel>) :
 
     override fun onBindViewHolder(holder: ImageAdapter.ViewHolder, position: Int) {
         val image = images[position]
-        holder.itemView.txt_imageLikes.text = image.likes.toString()
         holder.itemView.txt_imageViews.text = image.views.toString()
 
         Glide.with(holder.itemView.context)

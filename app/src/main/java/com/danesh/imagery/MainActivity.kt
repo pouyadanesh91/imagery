@@ -13,7 +13,6 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_main.*
-import retrofit2.HttpException
 
 class MainActivity : AppCompatActivity(), ImageAdapter.ClickListener {
 
@@ -22,6 +21,7 @@ class MainActivity : AppCompatActivity(), ImageAdapter.ClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        ImageAdapter.clickListener = this
         getImages()
 
     }

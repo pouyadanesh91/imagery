@@ -15,4 +15,10 @@ interface ApiInterface {
         @Query("per_page") perPage: Int
     ): Observable<ImageResponseModel>
 
+    @GET("api/")
+    fun getImageById(
+        @Query("key") key: String,
+        @Query("id") imageId: Int
+    ): Observable<ImageResponseModel>
+
 }
